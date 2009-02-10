@@ -17,7 +17,7 @@ run("find . \\( -type d -empty \\) -and \\( -not -regex ./\\.git.* \\) -exec tou
 # git:rails:new_app
 git :init
 
-initializer '.gitignore', <<-CODE
+file '.gitignore', <<-CODE
 log/\\*.log
 log/\\*.pid
 db/\\*.db
